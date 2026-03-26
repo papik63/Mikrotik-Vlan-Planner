@@ -20,7 +20,7 @@
 
 ### 🚀 Demo
 
-Смотри папку preview
+Смотри папку [preview](./preview)
 
 ---
 
