@@ -1,0 +1,19 @@
+{
+  "name": "vlan-planner",
+  "version": "1.0.0",
+  "description": "Interactive VLAN planner for MikroTik RouterOS v7 with CLI config generation",
+  "private": true,
+  "scripts": {
+    "dev":     "vite",
+    "build":   "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react":     "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite":                 "^8.0.2"
+  }
+}

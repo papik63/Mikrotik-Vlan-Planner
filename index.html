@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLAN Planner — MikroTik RouterOS v7</title>
+    <meta name="description" content="Интерактивный планировщик VLAN для MikroTik RouterOS v7. Визуальное проектирование сети с генерацией CLI-конфигурации." />
+
+    <!--
+      Content Security Policy — enforced for ALL delivery modes:
+      dev server, vite preview, and static build behind any web server.
+
+      NOTE: 'unsafe-inline' for script-src is required by Vite in development
+      (HMR injects inline scripts). For a hardened production build served via
+      nginx, replace 'unsafe-inline' with a nonce or hash — see README.
+
+      style-src 'unsafe-inline' is required because React uses inline style props.
+      google fonts must be allowed for Inter.
+
+      No external script sources are permitted.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src  'self' 'unsafe-inline';
+      style-src   'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src    'self' https://fonts.gstatic.com;
+      img-src     'self' data:;
+      connect-src 'self';
+      object-src  'none';
+      base-uri    'self';
+      form-action 'self';
+      frame-ancestors 'none';
+    " />
+
+    <!--
+      Inter — self-hosted copy preferred for production to avoid
+      dependency on Google's CDN and to enable SRI.
+      Current setup uses Google Fonts CDN for simplicity.
+      To self-host: download from fontsource.org and update paths below.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <style>
+      *, *::before, *::after { box-sizing: border-box; }
+      body { margin: 0; padding: 0; background: #0d1117; }
+      :root { font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
